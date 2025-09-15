@@ -1,17 +1,16 @@
 body {
     margin: 0;
-    padding: 20px; /* espacio alrededor */
+    padding: 0;
+    overflow: auto; /* 👈 permite scroll */
     font-family: 'Dancing Script', cursive;
     display: flex;
-    flex-direction: column; /* apilar en columna */
-    justify-content: flex-start; /* empieza desde arriba */
+    flex-direction: column; /* 👈 cuadros uno debajo del otro */
+    justify-content: flex-start;
     align-items: center;
     min-height: 100vh;
     text-align: center;
     animation: backgroundChange 10s infinite alternate; 
-    overflow-x: hidden; /* evita scroll lateral */
 }
-
 /* Animación de fondo */
 @keyframes backgroundChange {
     0% { background-color: #ffebf3; } 
@@ -29,8 +28,8 @@ body {
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-index: 1;
-}
+    z-index: 0; /* 👈 se quedan detrás */
+    }
 
 .heart {
     position: absolute;
@@ -47,16 +46,15 @@ body {
 
 /* Cuadros principales */
 .container {
-    background: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.315);
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
     max-width: 400px;
-    width: 100%;
-    margin-bottom: 40px; /* separación entre cuadros */
     position: relative;
-    z-index: 2;
+    z-index: 2; /* 👈 los cuadros encima de corazones */
     animation: fadeIn 1.5s ease-in-out;
+    margin-bottom: 40px; /* 👈 espacio entre cuadros */
 }
 
 /* Animación de aparición */
