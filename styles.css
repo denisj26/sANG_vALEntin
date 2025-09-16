@@ -117,7 +117,7 @@ button:hover {
 .oculto::selection {
     color: black;
     background: yellow; /* 👈 fondo del resaltado */
-    
+}  
 /* Botón de descarga */
 .download-btn {
     display: inline-block;
