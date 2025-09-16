@@ -108,6 +108,16 @@ button:hover {
     transform: scale(1.1);
 }
 
+.oculto {
+    color: transparent;   /* 👈 no se ve normalmente */
+    user-select: text;    /* 👈 permite seleccionarlo */
+}
+
+/* cuando lo seleccionas aparece en negro */
+.oculto::selection {
+    color: black;
+    background: yellow; /* 👈 fondo del resaltado */
+    
 /* Botón de descarga */
 .download-btn {
     display: inline-block;
