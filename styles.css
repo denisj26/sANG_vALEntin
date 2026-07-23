@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* FONDO */
+/* BACKGROUND */
 body {
   height: 100vh;
   background: #0f172a;
@@ -16,30 +16,30 @@ body {
   align-items: center;
 }
 
-/* CONTENEDOR */
+/* CONTAINER */
 .container {
   text-align: center;
 }
 
-/* 404 GRANDE */
+/* BIG 404 */
 h1 {
   font-size: 120px;
   color: #38bdf8;
 }
 
-/* SUBTITULO */
+/* SUBTITLE */
 h2 {
   margin: 10px 0;
   font-weight: normal;
 }
 
-/* TEXTO */
+/* TEXT */
 p {
   color: #94a3b8;
   margin-top: 10px;
 }
 
-/* BOTÓN */
+/* BUTTON */
 .btn {
   display: inline-block;
   margin-top: 20px;
@@ -55,21 +55,15 @@ p {
   background: #0ea5e9;
 }
 
-/* 🔥 TEXTO OCULTO */
+/* 🔥 HIDDEN TEXT (SOLO HOVER) */
 .oculto {
-  color: transparent;   /* invisible */
-  user-select: text;    /* permite seleccionarlo */
-  cursor: pointer;
+  color: transparent;      /* invisible */
+  user-select: none;       /* NO se puede seleccionar */
+  pointer-events: auto;
   transition: 0.3s;
 }
 
-/* aparece al pasar el mouse */
+/* SOLO aparece al pasar el mouse */
 .oculto:hover {
   color: #e2e8f0;
-}
-
-/* aparece al seleccionarlo */
-.oculto::selection {
-  color: #000;
-  background: #38bdf8;
 }
