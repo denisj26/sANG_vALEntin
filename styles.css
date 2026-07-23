@@ -1,11 +1,9 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BACKGROUND */
 body {
   height: 100vh;
   background: #0f172a;
@@ -16,24 +14,24 @@ body {
   align-items: center;
 }
 
-/* CONTAINER */
 .container {
   text-align: center;
 }
 
-/* 404 */
 h1 {
   font-size: 120px;
   color: #38bdf8;
 }
 
-/* TEXT */
+h2 {
+  margin: 10px 0;
+}
+
 p {
   color: #94a3b8;
   margin-top: 10px;
 }
 
-/* BUTTON */
 .btn {
   display: inline-block;
   margin-top: 20px;
@@ -44,14 +42,13 @@ p {
   border-radius: 5px;
 }
 
-/* 🔥 EASTER EGG (oculto) */
+/* Easter egg oculto */
 #easterEgg {
   position: fixed;
   bottom: 20px;
   right: 20px;
   color: #38bdf8;
   opacity: 0;
-  pointer-events: none;
   transition: 0.3s;
   font-size: 14px;
 }
