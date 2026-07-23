@@ -1,18 +1,15 @@
-// Detectar cuando el usuario selecciona texto
-document.addEventListener("mouseup", () => {
-  const selectedText = window.getSelection().toString();
+const easterEgg = document.getElementById("easterEgg");
 
-  const egg = document.getElementById("easterEgg");
 
-  if (selectedText.includes("404")) {
-    egg.style.opacity = "1";
-  } else {
-    egg.style.opacity = "0";
-  }
-});
+document.addEventListener("selectionchange", () => {
 
-// Opcional: ocultar si hacen click fuera
-document.addEventListener("click", () => {
-  const egg = document.getElementById("easterEgg");
-  egg.style.opacity = "0";
+    const seleccion = window.getSelection().toString();
+
+    if (seleccion.length > 10) {
+        easterEgg.classList.add("show");
+    } 
+    else {
+        easterEgg.classList.remove("show");
+    }
+
 });
