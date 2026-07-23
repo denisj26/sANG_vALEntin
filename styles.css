@@ -47,18 +47,17 @@ p {
 
 /* TEXTO OCULTO */
 .oculto {
-  color: transparent;              /* invisible */
-  background-color: transparent;
+  color: transparent;   /* invisible */
   transition: 0.3s;
   cursor: pointer;
 }
 
-/* SE REVELA AL PASAR EL MOUSE */
+/* SE MUESTRA AL PASAR EL MOUSE */
 .oculto:hover {
   color: #e2e8f0;
 }
 
-/* TAMBIÉN SE VE AL SELECCIONAR */
+/* SE VE AL SELECCIONAR */
 .oculto::selection {
   color: #000;
   background: #38bdf8;
