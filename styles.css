@@ -1,57 +1,73 @@
-body {
-  background: #111;
-  color: white;
-  font-family: Arial, sans-serif;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* BODY */
+body {
+  height: 100vh;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTENEDOR */
 .container {
   text-align: center;
-  margin-top: 150px;
 }
 
+/* 404 GRANDE */
 h1 {
-  font-size: 100px;
-  margin: 0;
+  font-size: 120px;
+  color: #38bdf8;
 }
 
+/* SUBTEXTO */
 h2 {
-  font-size: 30px;
+  margin: 10px 0;
+  font-weight: normal;
 }
 
+/* PÁRRAFOS */
 p {
-  color: #aaa;
+  color: #94a3b8;
+  margin-top: 10px;
 }
 
+/* BOTÓN */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #38bdf8;
+  color: #0f172a;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
 
-/* Easter Egg oculto */
+.btn:hover {
+  background: #0ea5e9;
+}
+
+/* 🔥 EASTER EGG (OCULTO POR DEFECTO) */
 #easterEgg {
   position: fixed;
+  bottom: 20px;
   right: 20px;
-  bottom: 30px;
-
-  width: 300px;
-  padding: 15px;
-
-  background: rgba(0,0,0,0.85);
-  color: #fff;
-
-  border: 1px solid #555;
-  border-radius: 10px;
-
-  font-size: 14px;
-  line-height: 1.5;
-
-  opacity: 0;
-  transform: translateX(100px);
-
+  color: #38bdf8;
+  opacity: 0;              /* oculto */
   pointer-events: none;
-
-  transition: all 0.5s ease;
+  transition: opacity 0.3s ease;
+  font-size: 14px;
 }
 
-
-/* cuando aparece */
-#easterEgg.show {
-  opacity: 1;
-  transform: translateX(0);
+/* OPCIONAL: mejora visual al seleccionar texto */
+::selection {
+  background: rgba(56, 189, 248, 0.3);
 }
