@@ -1,13 +1,19 @@
-body {
+/* RESET */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* FONDO */
+body {
+  height: 100vh;
   background: #0f172a;
   color: #e2e8f0;
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 /* CONTENEDOR */
@@ -15,18 +21,22 @@ body {
   text-align: center;
 }
 
+/* 404 GRANDE */
 h1 {
   font-size: 120px;
-  margin: 0;
   color: #38bdf8;
 }
 
+/* SUBTITULO */
 h2 {
   margin: 10px 0;
+  font-weight: normal;
 }
 
+/* TEXTO */
 p {
   color: #94a3b8;
+  margin-top: 10px;
 }
 
 /* BOTÓN */
@@ -45,19 +55,20 @@ p {
   background: #0ea5e9;
 }
 
-/* TEXTO OCULTO */
+/* 🔥 TEXTO OCULTO */
 .oculto {
   color: transparent;   /* invisible */
-  transition: 0.3s;
+  user-select: text;    /* permite seleccionarlo */
   cursor: pointer;
+  transition: 0.3s;
 }
 
-/* SE MUESTRA AL PASAR EL MOUSE */
+/* aparece al pasar el mouse */
 .oculto:hover {
   color: #e2e8f0;
 }
 
-/* SE VE AL SELECCIONAR */
+/* aparece al seleccionarlo */
 .oculto::selection {
   color: #000;
   background: #38bdf8;
