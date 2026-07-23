@@ -21,16 +21,10 @@ body {
   text-align: center;
 }
 
-/* BIG 404 */
+/* 404 */
 h1 {
   font-size: 120px;
   color: #38bdf8;
-}
-
-/* SUBTITLE */
-h2 {
-  margin: 10px 0;
-  font-weight: normal;
 }
 
 /* TEXT */
@@ -48,22 +42,16 @@ p {
   color: #0f172a;
   text-decoration: none;
   border-radius: 5px;
+}
+
+/* 🔥 EASTER EGG (oculto) */
+#easterEgg {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #38bdf8;
+  opacity: 0;
+  pointer-events: none;
   transition: 0.3s;
-}
-
-.btn:hover {
-  background: #0ea5e9;
-}
-
-/* 🔥 HIDDEN TEXT (SOLO HOVER) */
-.oculto {
-  color: transparent;      /* invisible */
-  user-select: none;       /* NO se puede seleccionar */
-  pointer-events: auto;
-  transition: 0.3s;
-}
-
-/* SOLO aparece al pasar el mouse */
-.oculto:hover {
-  color: #e2e8f0;
+  font-size: 14px;
 }
